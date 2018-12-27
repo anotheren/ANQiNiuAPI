@@ -58,8 +58,12 @@ extension QNObjectAPI {
             fromData.append(imageData, withName: "file", fileName: fileName, mimeType: fileType.rawValue)
         }
         
-        public func handle(json: JSON) -> Result<JSON> {
-            return .success(json)
+        public func handle(json: JSON) -> Result<Bool> {
+            if let response = json.string, response == "SUCCESS" {
+                return .success(true)
+            } else {
+                return .success(false)
+            }
         }
     }
 }
