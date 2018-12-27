@@ -14,35 +14,42 @@ import CryptoSwift
 
 extension QNObjectAPI {
     
-    struct Upload: JSONUploadAPI {
+    public struct Upload: JSONUploadAPI {
         
-        let token: QNUploadToken
-        let imageData: Data
-        let fileName: String
-        let fileType: QNMIMEType
+        public let tokenString: String
+        public let imageData: Data
+        public let fileName: String
+        public let fileType: QNMIMEType
         
-        var baseURL: String {
+        public init(tokenString: String, imageData: Data, fileName: String, fileType: QNMIMEType) {
+            self.tokenString = tokenString
+            self.imageData = imageData
+            self.fileName = fileName
+            self.fileType = fileType
+        }
+        
+        public var baseURL: String {
             return "https://upload.qiniup.com"
         }
         
-        var path: String {
+        public var path: String {
             return "/"
         }
         
-        var method: HTTPMethod {
+        public var method: HTTPMethod {
             return .post
         }
         
-        var parameters: [String: String] {
+        public var parameters: [String: String] {
             let crc32 = UInt32(data: imageData.crc32().reversed())
             var parameters = [String: String]()
             parameters["key"] = fileName
-            parameters["token"] = token.tokenString
+            parameters["token"] = tokenString
             parameters["crc32"] = crc32.description
             return parameters
         }
         
-        func handle(fromData: MultipartFormData) {
+        public func handle(fromData: MultipartFormData) {
             for (key, value) in parameters {
                 if let encodedValue = value.data(using: .utf8) {
                     fromData.append(encodedValue, withName: key)
@@ -51,7 +58,7 @@ extension QNObjectAPI {
             fromData.append(imageData, withName: "file", fileName: fileName, mimeType: fileType.rawValue)
         }
         
-        func handle(json: JSON) -> Result<JSON> {
+        public func handle(json: JSON) -> Result<JSON> {
             return .success(json)
         }
     }
