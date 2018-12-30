@@ -10,7 +10,7 @@ import Foundation
 
 extension ExpressibleByIntegerLiteral {
     
-    public var data: Data {
+    var data: Data {
         var value: Self = self
         let size: Int = MemoryLayout<Self>.size
         return withUnsafeMutablePointer(to: &value) {
@@ -20,7 +20,7 @@ extension ExpressibleByIntegerLiteral {
         }
     }
     
-    public init(data: Data) {
+    init(data: Data) {
         let diff: Int = MemoryLayout<Self>.size - data.count
         if diff > 0 {
             var buffer: Data = Data(repeating: 0, count: diff)
@@ -34,7 +34,7 @@ extension ExpressibleByIntegerLiteral {
 
 extension ExpressibleByIntegerLiteral {
     
-    public init(data: ReversedCollection<Data>) {
+    init(data: ReversedCollection<Data>) {
         self.init(data: Data(data))
     }
 }
