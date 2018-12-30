@@ -1,5 +1,5 @@
 //
-//  QNObjectAPI+Upload.swift
+//  QNObjectAPI+FormUpload.swift
 //  ANQiNiuAPITests
 //
 //  Created by 刘栋 on 2018/12/27.
@@ -14,7 +14,8 @@ import CryptoSwift
 
 extension QNObjectAPI {
     
-    public struct Upload: JSONUploadAPI {
+    /// https://developer.qiniu.com/kodo/manual/1272/form-upload
+    public struct FormUpload: JSONUploadAPI {
         
         public let tokenString: String
         public let imageData: Data
@@ -58,13 +59,13 @@ extension QNObjectAPI {
             fromData.append(imageData, withName: "file", fileName: fileName, mimeType: fileType.rawValue)
         }
         
-        public func handle(json: JSON) -> Result<JSON> {
-            return .success(json)
-//            if let response = json.string, response == "SUCCESS" {
-//                return .success(true)
-//            } else {
-//                return .success(false)
-//            }
+        public func handle(json: JSON) -> Result<UploadResult> {
+            if let uploadResult = UploadResult(json: json) {
+                return .success(uploadResult)
+            } else {
+                let error = QNError(json: json)
+                return .failure(error)
+            }
         }
     }
 }

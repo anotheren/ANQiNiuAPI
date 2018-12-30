@@ -48,8 +48,7 @@ extension QNServiceAPI {
                 }
                 return .success(buckets)
             } else {
-                let error = json["error"].string ?? "Unknown Error"
-                return .failure(QNError(error: error))
+                return .failure(QNError(json: json))
             }
         }
     }

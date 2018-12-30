@@ -28,10 +28,11 @@
 		A02F92D321D4CD3C0052D837 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02F92C321D4CBF90052D837 /* CryptoSwift.framework */; };
 		A02F92D421D4CD3C0052D837 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02F92C721D4CBFA0052D837 /* SwiftyJSON.framework */; };
 		A02F92D521D4CD3C0052D837 /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02F92C621D4CBF90052D837 /* SWXMLHash.framework */; };
-		A02F92DC21D4D4100052D837 /* QNObjectAPI+Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F92DA21D4CF390052D837 /* QNObjectAPI+Upload.swift */; };
+		A02F92DC21D4D4100052D837 /* QNObjectAPI+FormUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F92DA21D4CF390052D837 /* QNObjectAPI+FormUpload.swift */; };
 		A02F92DD21D4D4150052D837 /* QNObjectAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F92D821D4CEEE0052D837 /* QNObjectAPI.swift */; };
 		A02F92DF21D4D4890052D837 /* Ex+ExpressibleByIntegerLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F92DE21D4D4890052D837 /* Ex+ExpressibleByIntegerLiteral.swift */; };
 		A02F92E221D4E4890052D837 /* QNMIMEType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F92E121D4E4890052D837 /* QNMIMEType.swift */; };
+		A0DE6FA921D8C18B00AD4BF1 /* UploadResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE6FA821D8C18B00AD4BF1 /* UploadResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,9 +69,10 @@
 		A02F92D621D4CE140052D837 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A02F92D721D4CE140052D837 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A02F92D821D4CEEE0052D837 /* QNObjectAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QNObjectAPI.swift; sourceTree = "<group>"; };
-		A02F92DA21D4CF390052D837 /* QNObjectAPI+Upload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QNObjectAPI+Upload.swift"; sourceTree = "<group>"; };
+		A02F92DA21D4CF390052D837 /* QNObjectAPI+FormUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QNObjectAPI+FormUpload.swift"; sourceTree = "<group>"; };
 		A02F92DE21D4D4890052D837 /* Ex+ExpressibleByIntegerLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+ExpressibleByIntegerLiteral.swift"; sourceTree = "<group>"; };
 		A02F92E121D4E4890052D837 /* QNMIMEType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QNMIMEType.swift; sourceTree = "<group>"; };
+		A0DE6FA821D8C18B00AD4BF1 /* UploadResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				A02F92D821D4CEEE0052D837 /* QNObjectAPI.swift */,
-				A02F92DA21D4CF390052D837 /* QNObjectAPI+Upload.swift */,
+				A02F92DA21D4CF390052D837 /* QNObjectAPI+FormUpload.swift */,
+				A0DE6FA821D8C18B00AD4BF1 /* UploadResult.swift */,
 			);
 			path = ObjectAPI;
 			sourceTree = "<group>";
@@ -308,9 +311,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A02F92BB21D4C8F50052D837 /* QNDownloadToken.swift in Sources */,
+				A0DE6FA921D8C18B00AD4BF1 /* UploadResult.swift in Sources */,
 				A02F92B621D4C8F00052D837 /* QNZone.swift in Sources */,
 				A02F92BC21D4C8F50052D837 /* QNAccessToken.swift in Sources */,
-				A02F92DC21D4D4100052D837 /* QNObjectAPI+Upload.swift in Sources */,
+				A02F92DC21D4D4100052D837 /* QNObjectAPI+FormUpload.swift in Sources */,
 				A02F92BE21D4C9180052D837 /* QNServiceAPI+Buckets.swift in Sources */,
 				A02F92DD21D4D4150052D837 /* QNObjectAPI.swift in Sources */,
 				A02F92C021D4C9240052D837 /* QNServiceAPI.swift in Sources */,

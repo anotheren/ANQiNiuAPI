@@ -7,14 +7,24 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 public struct QNError: Error {
     
     public let code: Int
     public let error: String
     
-    public init(code: Int = -1, error: String = "") {
+    public init(code: Int, error: String) {
         self.code = code
         self.error = error
+    }
+}
+
+extension QNError {
+    
+    init(json: JSON) {
+        let code = json["code"].int ?? -999
+        let error = json["error"].string ?? "Unknown Error"
+        self.init(code: code, error: error)
     }
 }
