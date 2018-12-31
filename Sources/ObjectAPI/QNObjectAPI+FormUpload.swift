@@ -59,8 +59,8 @@ extension QNObjectAPI {
             fromData.append(imageData, withName: "file", fileName: fileName, mimeType: fileType.rawValue)
         }
         
-        public func handle(json: JSON) -> Result<UploadResult> {
-            if let uploadResult = UploadResult(json: json) {
+        public func handle(json: JSON) -> Result<QNUploadResult> {
+            if let uploadResult = QNUploadResult(json: json) {
                 return .success(uploadResult)
             } else {
                 let error = QNError(json: json)

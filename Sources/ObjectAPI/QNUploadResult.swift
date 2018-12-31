@@ -1,5 +1,5 @@
 //
-//  UploadResult.swift
+//  QNUploadResult.swift
 //  ANQiNiuAPI
 //
 //  Created by 刘栋 on 2018/12/30.
@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-public struct UploadResult {
+public struct QNUploadResult {
     
     public let key: String
     public let hash: String
