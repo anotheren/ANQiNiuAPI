@@ -18,6 +18,17 @@ public struct QNError: Error {
         self.code = code
         self.error = error
     }
+    
+    public var localizedDescription: String {
+        return "\(code):\(error)"
+    }
+}
+
+extension QNError: CustomStringConvertible {
+    
+    public var description: String {
+        return error
+    }
 }
 
 extension QNError {
