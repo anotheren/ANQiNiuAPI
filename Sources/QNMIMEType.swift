@@ -12,4 +12,13 @@ public enum QNMIMEType: String {
     
     case png = "image/png"
     case jpeg = "image/jpeg"
+    
+    public var filenameExtension: String {
+        switch self {
+        case .png:
+            return ".png"
+        case .jpeg:
+            return ".jpg"
+        }
+    }
 }
