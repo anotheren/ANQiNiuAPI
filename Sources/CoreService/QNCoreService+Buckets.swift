@@ -42,12 +42,7 @@ extension QNCoreService {
         
         public func handle(json: JSON) -> Result<[String]> {
             if let array = json.array {
-                var buckets = [String]()
-                for item in array {
-                    if let bucket = item.string {
-                        buckets.append(bucket)
-                    }
-                }
+                let buckets = array.compactMap { $0.string }
                 return .success(buckets)
             } else {
                 return .failure(QNError(json: json))
