@@ -15,7 +15,9 @@ import CryptoSwift
 extension QNObjectService {
     
     /// https://developer.qiniu.com/kodo/manual/1272/form-upload
-    public struct FormUpload: DataUploadAPI {
+    public struct FormUpload: QNJSONUploadAPI {
+        
+        public typealias ResultType = QNUploadResult
         
         public let tokenString: String
         public let imageData: Data
@@ -57,15 +59,6 @@ extension QNObjectService {
                 }
             }
             fromData.append(imageData, withName: "file", fileName: fileName, mimeType: fileType.rawValue)
-        }
-        
-        public func handle(data: Data) -> Result<QNUploadResult> {
-            do {
-                let json = try JSON(data: data)
-                return handle(json: json)
-            } catch {
-                return .failure(error)
-            }
         }
         
         public func handle(json: JSON) -> Result<QNUploadResult> {

@@ -13,7 +13,9 @@ import ANBaseNetwork
 
 extension QNCoreService {
     
-    public struct Buckets: DataRequestAPI {
+    public struct Buckets: QNJSONRequestAPI {
+        
+        public typealias ResultType = [String]
         
         private var token: QNAccessToken
         
@@ -36,10 +38,6 @@ extension QNCoreService {
         
         public var headers: HTTPHeaders {
             return ["Authorization": "QBox \(token.tokenString ?? "")"]
-        }
-        
-        public func handle(data: Data) -> Result<[String]> {
-            fatalError()
         }
         
         public func handle(json: JSON) -> Result<[String]> {
