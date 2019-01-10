@@ -1,5 +1,5 @@
 //
-//  QNServiceAPI+Buckets.swift
+//  QNCoreService+Buckets.swift
 //  ANQiNiuAPI
 //
 //  Created by 刘栋 on 2018/11/9.
@@ -11,9 +11,9 @@ import Alamofire
 import SwiftyJSON
 import ANBaseNetwork
 
-extension QNServiceAPI {
+extension QNCoreService {
     
-    public struct Buckets: JSONRequestAPI {
+    public struct Buckets: DataRequestAPI {
         
         private var token: QNAccessToken
         
@@ -36,6 +36,10 @@ extension QNServiceAPI {
         
         public var headers: HTTPHeaders {
             return ["Authorization": "QBox \(token.tokenString ?? "")"]
+        }
+        
+        public func handle(data: Data) -> Result<[String]> {
+            fatalError()
         }
         
         public func handle(json: JSON) -> Result<[String]> {

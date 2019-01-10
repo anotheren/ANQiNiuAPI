@@ -1,5 +1,5 @@
 //
-//  QNServiveAPITests.swift
+//  QNCoreServiveTests.swift
 //  QiNiuAPITests
 //
 //  Created by 刘栋 on 2018/11/9.
@@ -18,7 +18,7 @@ class QNServiveAPITests: XCTestCase {
     func testBuckets() {
         let expectation = XCTestExpectation(description: "Test Get Buckets")
         let token = QNAccessToken(accessKey: accessKey, secretKey: secretKey)
-        let api = QNServiceAPI.Buckets(token: token)
+        let api = QNCoreService.Buckets(token: token)
         request(api: api) { result in
             switch result {
             case .failure(let error):
