@@ -273,10 +273,11 @@
 				TargetAttributes = {
 					A02F929421D4C85A0052D837 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					A02F929D21D4C85A0052D837 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -286,6 +287,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = A02F928B21D4C85A0052D837;
 			productRefGroup = A02F929621D4C85A0052D837 /* Products */;
@@ -505,7 +507,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.anotheren.ANQiNiuAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -536,7 +538,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.anotheren.ANQiNiuAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -562,7 +564,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.anotheren.ANQiNiuAPITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -587,7 +589,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.anotheren.ANQiNiuAPITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

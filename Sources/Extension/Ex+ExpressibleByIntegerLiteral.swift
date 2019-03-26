@@ -23,11 +23,12 @@ extension ExpressibleByIntegerLiteral {
     init(data: Data) {
         let diff: Int = MemoryLayout<Self>.size - data.count
         if diff > 0 {
-            var buffer: Data = Data(repeating: 0, count: diff)
-            buffer.append(data)
-            self = buffer.withUnsafeBytes { $0.pointee }
+            let buffer = Data(repeating: 0, count: diff)
+            self = (data+buffer).withUnsafeBytes { $0.load(as: Self.self) }
+        } else if diff < 0 {
+            self = data[0..<data.count+diff].withUnsafeBytes { $0.load(as: Self.self) }
         } else {
-            self = data.withUnsafeBytes { $0.pointee }
+            self = data.withUnsafeBytes { $0.load(as: Self.self) }
         }
     }
 }
