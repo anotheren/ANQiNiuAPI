@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A02F929F21D4C85A0052D837 /* ANQiNiuAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02F929521D4C85A0052D837 /* ANQiNiuAPI.framework */; };
 		A02F92A621D4C85A0052D837 /* ANQiNiuAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = A02F929821D4C85A0052D837 /* ANQiNiuAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A02F92B521D4C8F00052D837 /* QNError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F92B321D4C8F00052D837 /* QNError.swift */; };
 		A02F92B621D4C8F00052D837 /* QNZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F92B421D4C8F00052D837 /* QNZone.swift */; };
@@ -20,12 +19,6 @@
 		A02F92C921D4CBFA0052D837 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02F92C421D4CBF90052D837 /* Alamofire.framework */; };
 		A02F92CA21D4CBFA0052D837 /* ANBaseNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02F92C521D4CBF90052D837 /* ANBaseNetwork.framework */; };
 		A02F92CC21D4CBFA0052D837 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02F92C721D4CBFA0052D837 /* SwiftyJSON.framework */; };
-		A02F92CF21D4CD010052D837 /* QNCoreServiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F92CD21D4CD010052D837 /* QNCoreServiveTests.swift */; };
-		A02F92D021D4CD010052D837 /* QNTokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F92CE21D4CD010052D837 /* QNTokenTests.swift */; };
-		A02F92D121D4CD3C0052D837 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02F92C421D4CBF90052D837 /* Alamofire.framework */; };
-		A02F92D221D4CD3C0052D837 /* ANBaseNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02F92C521D4CBF90052D837 /* ANBaseNetwork.framework */; };
-		A02F92D321D4CD3C0052D837 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02F92C321D4CBF90052D837 /* CryptoSwift.framework */; };
-		A02F92D421D4CD3C0052D837 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02F92C721D4CBFA0052D837 /* SwiftyJSON.framework */; };
 		A02F92DC21D4D4100052D837 /* QNObjectService+FormUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F92DA21D4CF390052D837 /* QNObjectService+FormUpload.swift */; };
 		A02F92DD21D4D4150052D837 /* QNObjectService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F92D821D4CEEE0052D837 /* QNObjectService.swift */; };
 		A02F92DF21D4D4890052D837 /* Ex+ExpressibleByIntegerLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F92DE21D4D4890052D837 /* Ex+ExpressibleByIntegerLiteral.swift */; };
@@ -35,22 +28,10 @@
 		A0DE6FA921D8C18B00AD4BF1 /* QNUploadResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DE6FA821D8C18B00AD4BF1 /* QNUploadResult.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A02F92A021D4C85A0052D837 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A02F928C21D4C85A0052D837 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A02F929421D4C85A0052D837;
-			remoteInfo = ANQiNiuAPI;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		A02F929521D4C85A0052D837 /* ANQiNiuAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ANQiNiuAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A02F929821D4C85A0052D837 /* ANQiNiuAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANQiNiuAPI.h; sourceTree = "<group>"; };
 		A02F929921D4C85A0052D837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A02F929E21D4C85A0052D837 /* ANQiNiuAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ANQiNiuAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A02F92A521D4C85A0052D837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A02F92B321D4C8F00052D837 /* QNError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QNError.swift; sourceTree = "<group>"; };
 		A02F92B421D4C8F00052D837 /* QNZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QNZone.swift; sourceTree = "<group>"; };
 		A02F92B721D4C8F50052D837 /* QNUploadToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QNUploadToken.swift; sourceTree = "<group>"; };
@@ -64,8 +45,6 @@
 		A02F92C521D4CBF90052D837 /* ANBaseNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ANBaseNetwork.framework; path = Carthage/Build/iOS/ANBaseNetwork.framework; sourceTree = "<group>"; };
 		A02F92C621D4CBF90052D837 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/iOS/SWXMLHash.framework; sourceTree = "<group>"; };
 		A02F92C721D4CBFA0052D837 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
-		A02F92CD21D4CD010052D837 /* QNCoreServiveTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QNCoreServiveTests.swift; sourceTree = "<group>"; };
-		A02F92CE21D4CD010052D837 /* QNTokenTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QNTokenTests.swift; sourceTree = "<group>"; };
 		A02F92D621D4CE140052D837 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A02F92D721D4CE140052D837 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A02F92D821D4CEEE0052D837 /* QNObjectService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QNObjectService.swift; sourceTree = "<group>"; };
@@ -89,18 +68,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A02F929B21D4C85A0052D837 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A02F92D121D4CD3C0052D837 /* Alamofire.framework in Frameworks */,
-				A02F92D221D4CD3C0052D837 /* ANBaseNetwork.framework in Frameworks */,
-				A02F92D321D4CD3C0052D837 /* CryptoSwift.framework in Frameworks */,
-				A02F92D421D4CD3C0052D837 /* SwiftyJSON.framework in Frameworks */,
-				A02F929F21D4C85A0052D837 /* ANQiNiuAPI.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -111,7 +78,6 @@
 				A02F92D621D4CE140052D837 /* README.md */,
 				A02F92C121D4C94A0052D837 /* Cartfile */,
 				A02F929721D4C85A0052D837 /* Sources */,
-				A02F92A221D4C85A0052D837 /* Tests */,
 				A02F929621D4C85A0052D837 /* Products */,
 				A02F92C221D4CBF90052D837 /* Frameworks */,
 			);
@@ -121,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				A02F929521D4C85A0052D837 /* ANQiNiuAPI.framework */,
-				A02F929E21D4C85A0052D837 /* ANQiNiuAPITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -138,16 +103,6 @@
 				A02F92E021D4D4A20052D837 /* Extension */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		A02F92A221D4C85A0052D837 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				A02F92A521D4C85A0052D837 /* Info.plist */,
-				A02F92CD21D4CD010052D837 /* QNCoreServiveTests.swift */,
-				A02F92CE21D4CD010052D837 /* QNTokenTests.swift */,
-			);
-			path = Tests;
 			sourceTree = "<group>";
 		};
 		A02F92C221D4CBF90052D837 /* Frameworks */ = {
@@ -243,24 +198,6 @@
 			productReference = A02F929521D4C85A0052D837 /* ANQiNiuAPI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		A02F929D21D4C85A0052D837 /* ANQiNiuAPITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A02F92AC21D4C85A0052D837 /* Build configuration list for PBXNativeTarget "ANQiNiuAPITests" */;
-			buildPhases = (
-				A02F929A21D4C85A0052D837 /* Sources */,
-				A02F929B21D4C85A0052D837 /* Frameworks */,
-				A02F929C21D4C85A0052D837 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A02F92A121D4C85A0052D837 /* PBXTargetDependency */,
-			);
-			name = ANQiNiuAPITests;
-			productName = ANQiNiuAPITests;
-			productReference = A02F929E21D4C85A0052D837 /* ANQiNiuAPITests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -272,10 +209,6 @@
 				ORGANIZATIONNAME = anotheren.com;
 				TargetAttributes = {
 					A02F929421D4C85A0052D837 = {
-						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1020;
-					};
-					A02F929D21D4C85A0052D837 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1020;
 					};
@@ -295,20 +228,12 @@
 			projectRoot = "";
 			targets = (
 				A02F929421D4C85A0052D837 /* ANQiNiuAPI */,
-				A02F929D21D4C85A0052D837 /* ANQiNiuAPITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A02F929321D4C85A0052D837 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A02F929C21D4C85A0052D837 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -339,24 +264,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A02F929A21D4C85A0052D837 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A02F92D021D4CD010052D837 /* QNTokenTests.swift in Sources */,
-				A02F92CF21D4CD010052D837 /* QNCoreServiveTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A02F92A121D4C85A0052D837 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A02F929421D4C85A0052D837 /* ANQiNiuAPI */;
-			targetProxy = A02F92A021D4C85A0052D837 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A02F92A721D4C85A0052D837 /* Debug */ = {
@@ -543,57 +451,6 @@
 			};
 			name = Release;
 		};
-		A02F92AD21D4C85A0052D837 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7SA22A9L3L;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.anotheren.ANQiNiuAPITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		A02F92AE21D4C85A0052D837 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7SA22A9L3L;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				INFOPLIST_FILE = Tests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.anotheren.ANQiNiuAPITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -611,15 +468,6 @@
 			buildConfigurations = (
 				A02F92AA21D4C85A0052D837 /* Debug */,
 				A02F92AB21D4C85A0052D837 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A02F92AC21D4C85A0052D837 /* Build configuration list for PBXNativeTarget "ANQiNiuAPITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A02F92AD21D4C85A0052D837 /* Debug */,
-				A02F92AE21D4C85A0052D837 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
