@@ -20,13 +20,21 @@ extension QNObjectService {
         public typealias ResultType = QNUploadResult
         
         public let tokenString: String
-        public let imageData: Data
+        public let data: Data
         public let fileName: String
         public let fileType: QNMIMEType
         
+        public init(tokenString: String, data: Data, fileName: String, fileType: QNMIMEType) {
+            self.tokenString = tokenString
+            self.data = data
+            self.fileName = fileName
+            self.fileType = fileType
+        }
+        
+        @available(*, deprecated, message: "Use (tokenString:, data:, fileName:, fileType:) instead")
         public init(tokenString: String, imageData: Data, fileName: String, fileType: QNMIMEType) {
             self.tokenString = tokenString
-            self.imageData = imageData
+            self.data = imageData
             self.fileName = fileName
             self.fileType = fileType
         }
@@ -44,7 +52,7 @@ extension QNObjectService {
         }
         
         public var parameters: [String: String] {
-            let crc32 = UInt32(data: imageData.crc32().reversed())
+            let crc32 = UInt32(data: data.crc32().reversed())
             var parameters = [String: String]()
             parameters["key"] = fileName
             parameters["token"] = tokenString
@@ -58,7 +66,7 @@ extension QNObjectService {
                     fromData.append(encodedValue, withName: key)
                 }
             }
-            fromData.append(imageData, withName: "file", fileName: fileName, mimeType: fileType.rawValue)
+            fromData.append(data, withName: "file", fileName: fileName, mimeType: fileType.rawValue)
         }
         
         public func handle(json: JSON) -> Result<QNUploadResult> {

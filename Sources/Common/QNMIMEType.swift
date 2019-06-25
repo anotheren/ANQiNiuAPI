@@ -12,6 +12,7 @@ public enum QNMIMEType: String {
     
     case png = "image/png"
     case jpeg = "image/jpeg"
+    case log = "text/plain"
     
     public var filenameExtension: String {
         switch self {
@@ -19,6 +20,8 @@ public enum QNMIMEType: String {
             return ".png"
         case .jpeg:
             return ".jpg"
+        case .log:
+            return ".log"
         }
     }
 }
