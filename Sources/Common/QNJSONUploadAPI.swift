@@ -13,12 +13,12 @@ import Alamofire
 
 public protocol QNJSONUploadAPI: DataUploadAPI {
     
-    func handle(json: JSON) -> Result<ResultType>
+    func handle(json: JSON) -> Result<ResultType, Error>
 }
 
 extension QNJSONUploadAPI {
     
-    public func handle(data: Data) -> Result<ResultType> {
+    public func handle(data: Data) -> Result<ResultType, Error> {
         do {
             let json = try JSON(data: data)
             return handle(json: json)

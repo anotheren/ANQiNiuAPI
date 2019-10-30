@@ -1,12 +1,9 @@
-github "Alamofire/Alamofire"
 github "krzyzanowskim/CryptoSwift"
 github "SwiftyJSON/SwiftyJSON"
-
-git "https://github.com/anotheren/ANBaseNetwork.git"
-
+github "anotheren/ANBaseNetwork" "2.0.0-rc.1"
 
 # How to update
-# carthage update --platform iOS --no-use-binaries
+# carthage update --platform iOS --no-use-binaries --new-resolver --cache-builds
 
 # How to install Carthage
 # brew install carthage

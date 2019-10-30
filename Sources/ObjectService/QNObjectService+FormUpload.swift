@@ -31,14 +31,6 @@ extension QNObjectService {
             self.fileType = fileType
         }
         
-        @available(*, deprecated, message: "Use (tokenString:, data:, fileName:, fileType:) instead")
-        public init(tokenString: String, imageData: Data, fileName: String, fileType: QNMIMEType) {
-            self.tokenString = tokenString
-            self.data = imageData
-            self.fileName = fileName
-            self.fileType = fileType
-        }
-        
         public var baseURL: String {
             return "https://upload.qiniup.com"
         }
@@ -69,7 +61,7 @@ extension QNObjectService {
             fromData.append(data, withName: "file", fileName: fileName, mimeType: fileType.rawValue)
         }
         
-        public func handle(json: JSON) -> Result<QNUploadResult> {
+        public func handle(json: JSON) -> Result<QNUploadResult, Error> {
             if let uploadResult = QNUploadResult(json: json) {
                 return .success(uploadResult)
             } else {

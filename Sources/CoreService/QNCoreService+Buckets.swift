@@ -40,7 +40,7 @@ extension QNCoreService {
             return ["Authorization": "QBox \(token.tokenString ?? "")"]
         }
         
-        public func handle(json: JSON) -> Result<[String]> {
+        public func handle(json: JSON) -> Result<[String], Error> {
             if let array = json.array {
                 let buckets = array.compactMap { $0.string }
                 return .success(buckets)

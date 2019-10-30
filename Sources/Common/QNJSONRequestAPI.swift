@@ -13,12 +13,12 @@ import Alamofire
 
 public protocol QNJSONRequestAPI: DataRequestAPI {
     
-    func handle(json: JSON) -> Result<ResultType>
+    func handle(json: JSON) -> Result<ResultType, Error>
 }
 
 extension QNJSONRequestAPI {
     
-    public func handle(data: Data) -> Result<ResultType> {
+    public func handle(data: Data) -> Result<ResultType, Error> {
         do {
             let json = try JSON(data: data)
             return handle(json: json)
