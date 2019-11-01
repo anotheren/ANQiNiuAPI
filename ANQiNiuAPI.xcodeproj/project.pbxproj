@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		203E7F470E2EAAE5CCD0B2D8 /* Pods_ANQiNiuAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F2C8933A51CF77EC8C8A560 /* Pods_ANQiNiuAPI.framework */; };
 		A02F92A621D4C85A0052D837 /* ANQiNiuAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = A02F929821D4C85A0052D837 /* ANQiNiuAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A02F92B521D4C8F00052D837 /* QNError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F92B321D4C8F00052D837 /* QNError.swift */; };
 		A02F92B621D4C8F00052D837 /* QNZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F92B421D4C8F00052D837 /* QNZone.swift */; };
@@ -15,10 +16,6 @@
 		A02F92BC21D4C8F50052D837 /* QNAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F92B921D4C8F50052D837 /* QNAccessToken.swift */; };
 		A02F92BE21D4C9180052D837 /* QNCoreService+Buckets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F92BD21D4C9180052D837 /* QNCoreService+Buckets.swift */; };
 		A02F92C021D4C9240052D837 /* QNCoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F92BF21D4C9240052D837 /* QNCoreService.swift */; };
-		A02F92C821D4CBFA0052D837 /* CryptoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02F92C321D4CBF90052D837 /* CryptoSwift.framework */; };
-		A02F92C921D4CBFA0052D837 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02F92C421D4CBF90052D837 /* Alamofire.framework */; };
-		A02F92CA21D4CBFA0052D837 /* ANBaseNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02F92C521D4CBF90052D837 /* ANBaseNetwork.framework */; };
-		A02F92CC21D4CBFA0052D837 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A02F92C721D4CBFA0052D837 /* SwiftyJSON.framework */; };
 		A02F92DC21D4D4100052D837 /* QNObjectService+FormUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F92DA21D4CF390052D837 /* QNObjectService+FormUpload.swift */; };
 		A02F92DD21D4D4150052D837 /* QNObjectService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F92D821D4CEEE0052D837 /* QNObjectService.swift */; };
 		A02F92DF21D4D4890052D837 /* Ex+ExpressibleByIntegerLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02F92DE21D4D4890052D837 /* Ex+ExpressibleByIntegerLiteral.swift */; };
@@ -29,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		263B4699F2F4A62F89D70291 /* Pods-ANQiNiuAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANQiNiuAPI.debug.xcconfig"; path = "Target Support Files/Pods-ANQiNiuAPI/Pods-ANQiNiuAPI.debug.xcconfig"; sourceTree = "<group>"; };
+		9F2C8933A51CF77EC8C8A560 /* Pods_ANQiNiuAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ANQiNiuAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A02F929521D4C85A0052D837 /* ANQiNiuAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ANQiNiuAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A02F929821D4C85A0052D837 /* ANQiNiuAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANQiNiuAPI.h; sourceTree = "<group>"; };
 		A02F929921D4C85A0052D837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -40,11 +39,6 @@
 		A02F92BD21D4C9180052D837 /* QNCoreService+Buckets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "QNCoreService+Buckets.swift"; sourceTree = "<group>"; };
 		A02F92BF21D4C9240052D837 /* QNCoreService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QNCoreService.swift; sourceTree = "<group>"; };
 		A02F92C121D4C94A0052D837 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		A02F92C321D4CBF90052D837 /* CryptoSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CryptoSwift.framework; path = Carthage/Build/iOS/CryptoSwift.framework; sourceTree = "<group>"; };
-		A02F92C421D4CBF90052D837 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		A02F92C521D4CBF90052D837 /* ANBaseNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ANBaseNetwork.framework; path = Carthage/Build/iOS/ANBaseNetwork.framework; sourceTree = "<group>"; };
-		A02F92C621D4CBF90052D837 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/iOS/SWXMLHash.framework; sourceTree = "<group>"; };
-		A02F92C721D4CBFA0052D837 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 		A02F92D621D4CE140052D837 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A02F92D721D4CE140052D837 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A02F92D821D4CEEE0052D837 /* QNObjectService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QNObjectService.swift; sourceTree = "<group>"; };
@@ -54,6 +48,7 @@
 		A0AE0C4C21E73B4700BFCFA7 /* QNJSONUploadAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QNJSONUploadAPI.swift; sourceTree = "<group>"; };
 		A0AE0C4E21E73B5500BFCFA7 /* QNJSONRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QNJSONRequestAPI.swift; sourceTree = "<group>"; };
 		A0DE6FA821D8C18B00AD4BF1 /* QNUploadResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QNUploadResult.swift; sourceTree = "<group>"; };
+		CDB9C07D7AFE00F39AE63994 /* Pods-ANQiNiuAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ANQiNiuAPI.release.xcconfig"; path = "Target Support Files/Pods-ANQiNiuAPI/Pods-ANQiNiuAPI.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,10 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A02F92C821D4CBFA0052D837 /* CryptoSwift.framework in Frameworks */,
-				A02F92C921D4CBFA0052D837 /* Alamofire.framework in Frameworks */,
-				A02F92CA21D4CBFA0052D837 /* ANBaseNetwork.framework in Frameworks */,
-				A02F92CC21D4CBFA0052D837 /* SwiftyJSON.framework in Frameworks */,
+				203E7F470E2EAAE5CCD0B2D8 /* Pods_ANQiNiuAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +72,7 @@
 				A02F929721D4C85A0052D837 /* Sources */,
 				A02F929621D4C85A0052D837 /* Products */,
 				A02F92C221D4CBF90052D837 /* Frameworks */,
+				A45C58E10C7A09745597B740 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,11 +101,7 @@
 		A02F92C221D4CBF90052D837 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A02F92C421D4CBF90052D837 /* Alamofire.framework */,
-				A02F92C521D4CBF90052D837 /* ANBaseNetwork.framework */,
-				A02F92C321D4CBF90052D837 /* CryptoSwift.framework */,
-				A02F92C721D4CBFA0052D837 /* SwiftyJSON.framework */,
-				A02F92C621D4CBF90052D837 /* SWXMLHash.framework */,
+				9F2C8933A51CF77EC8C8A560 /* Pods_ANQiNiuAPI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -166,6 +155,15 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		A45C58E10C7A09745597B740 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				263B4699F2F4A62F89D70291 /* Pods-ANQiNiuAPI.debug.xcconfig */,
+				CDB9C07D7AFE00F39AE63994 /* Pods-ANQiNiuAPI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -184,6 +182,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A02F92A921D4C85A0052D837 /* Build configuration list for PBXNativeTarget "ANQiNiuAPI" */;
 			buildPhases = (
+				57E105CA5121E38B4FAD5807 /* [CP] Check Pods Manifest.lock */,
 				A02F929021D4C85A0052D837 /* Headers */,
 				A02F929121D4C85A0052D837 /* Sources */,
 				A02F929221D4C85A0052D837 /* Frameworks */,
@@ -241,6 +240,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		57E105CA5121E38B4FAD5807 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ANQiNiuAPI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A02F929121D4C85A0052D837 /* Sources */ = {
@@ -391,6 +415,7 @@
 		};
 		A02F92AA21D4C85A0052D837 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 263B4699F2F4A62F89D70291 /* Pods-ANQiNiuAPI.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -400,10 +425,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -412,7 +434,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = "2.0.0-rc.1";
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.anotheren.ANQiNiuAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -423,6 +445,7 @@
 		};
 		A02F92AB21D4C85A0052D837 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDB9C07D7AFE00F39AE63994 /* Pods-ANQiNiuAPI.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -432,10 +455,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -444,7 +464,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = "2.0.0-rc.1";
+				MARKETING_VERSION = 2.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.anotheren.ANQiNiuAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
