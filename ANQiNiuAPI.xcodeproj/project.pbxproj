@@ -45,6 +45,7 @@
 		A02F92DA21D4CF390052D837 /* QNObjectService+FormUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QNObjectService+FormUpload.swift"; sourceTree = "<group>"; };
 		A02F92DE21D4D4890052D837 /* Ex+ExpressibleByIntegerLiteral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ex+ExpressibleByIntegerLiteral.swift"; sourceTree = "<group>"; };
 		A02F92E121D4E4890052D837 /* QNMIMEType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QNMIMEType.swift; sourceTree = "<group>"; };
+		A062977B236BC625005A7ACE /* ANQiNiuAPI.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = ANQiNiuAPI.podspec; sourceTree = "<group>"; };
 		A0AE0C4C21E73B4700BFCFA7 /* QNJSONUploadAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QNJSONUploadAPI.swift; sourceTree = "<group>"; };
 		A0AE0C4E21E73B5500BFCFA7 /* QNJSONRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QNJSONRequestAPI.swift; sourceTree = "<group>"; };
 		A0DE6FA821D8C18B00AD4BF1 /* QNUploadResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QNUploadResult.swift; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 				A02F92D721D4CE140052D837 /* LICENSE */,
 				A02F92D621D4CE140052D837 /* README.md */,
 				A02F92C121D4C94A0052D837 /* Cartfile */,
+				A062977B236BC625005A7ACE /* ANQiNiuAPI.podspec */,
 				A02F929721D4C85A0052D837 /* Sources */,
 				A02F929621D4C85A0052D837 /* Products */,
 				A02F92C221D4CBF90052D837 /* Frameworks */,
@@ -434,7 +436,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.anotheren.ANQiNiuAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -464,7 +466,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0.0;
+				MARKETING_VERSION = 2.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.anotheren.ANQiNiuAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
